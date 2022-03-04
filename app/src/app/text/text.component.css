@@ -1,0 +1,10 @@
+.text{
+    width: 600px;
+    height: 60px;
+    border: 8px double palevioletred;
+    text-align: center;
+    font-size: x-large;
+    background-color: rgb(202, 220, 236);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}

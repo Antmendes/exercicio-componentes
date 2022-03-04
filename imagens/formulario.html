@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+</head>
+<body>
+    <form action="">
+     <fieldset> 
+      <legend>Faça seu cadastro</legend>  
+      <label for="nome">Nome</label> 
+      <input type="text"  id="nome" required>
+      <label for="sobre">Sobrenome</label>
+      <input type="text"  id="sobre" required>
+      <label for="cpf">cpf</label>
+      <input type="text"  id="cpf" minlength="11" maxlength="11" required> <br> <br>
+      <label for="mail">E-mail</label>
+      <input type="email" id="mail" required>
+      <label for="senha">Senha</label>
+      <input type="password" id="senha" required>
+      <label for="data" >Data de nascimento</label>
+      <input type="number" placeholder="dd/mm/aaaa" required> <br> <br>
+      <label for="sexo">Sexo</label>
+      <select  id="sexo" required>
+      <option value="m">masculino</option>
+      <option value="f">feminino</option>
+      <option value="o">outro</option>
+    </select>
+    <button type="submit">Enviar</button>
+
+    </fieldset>
+    </form>
+</body>
+</html>
