@@ -1,0 +1,16 @@
+<div class="container">
+  <h1>ToDo List</h1>
+  <div class="header">
+    <input type="text" maxlength="35" placeholder="Add your new ToDo" #newTask>
+    <button id="bt" (click)="adicionarTarefas(newTask.value)">+</button>
+  </div>
+  <div id="content">
+    <ul>
+      <li *ngFor="let task of tarefas let indexOfelement=index">{{task}}  <app-btn id="apbtn" (btnclick)="clearItem(indexOfelement)"></app-btn></li>
+    </ul>
+  </div>
+  <div class="footer">
+    <h3  *ngIf="tarefas != null">You have {{tarefas.length}}  pending tasks</h3>
+    <button (click)="clearList()" appBtnClearAll>Clear All</button>
+  </div>
+</div>
